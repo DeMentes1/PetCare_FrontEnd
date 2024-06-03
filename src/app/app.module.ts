@@ -52,6 +52,7 @@ import {MatNativeDateModule} from "@angular/material/core";
 import { NavbarVeterinaryComponent } from './shared/components/navbar-veterinary/navbar-veterinary.component';
 import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/navbar-pet-owner.component';
 import { AppointmentViewComponent } from './vet-appoinment/components/appointment-view/appointment-view.component';
+import { ForgotPasswordViewComponent } from './public/components/forgot-password-view/forgot-password-view.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { AppointmentViewComponent } from './vet-appoinment/components/appointmen
     FilterMenuComponent,
     NavbarVeterinaryComponent,
     NavbarPetOwnerComponent,
-    AppointmentViewComponent
+    AppointmentViewComponent,
+    ForgotPasswordViewComponent,
   ],
   imports: [
     BrowserModule,
