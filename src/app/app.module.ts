@@ -30,15 +30,25 @@ import {
   MatCardSubtitle,
   MatCardTitle
 } from "@angular/material/card";
-import {MatFormField, MatHint, MatInput, MatLabel} from "@angular/material/input";
+import {MatFormField, MatFormFieldModule, MatHint, MatLabel} from "@angular/material/form-field";
+import {MatInput} from "@angular/material/input";
 import {MatIcon, MatIconModule} from "@angular/material/icon";
 import {MatButton, MatButtonModule, MatFabButton, MatIconButton} from "@angular/material/button";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatSlideToggle} from "@angular/material/slide-toggle";
 import {MatToolbar} from "@angular/material/toolbar";
-import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatGridList, MatGridTile} from "@angular/material/grid-list";
 import {NgOptimizedImage} from "@angular/common";
+import {MatButtonToggle} from "@angular/material/button-toggle";
+import {MatDivider} from "@angular/material/divider";
+import {MatRadioButton, MatRadioGroup} from "@angular/material/radio";
+import { ProductsSearchBarComponent } from './shop/components/products-search-bar/products-search-bar.component';
+import { FilterMenuComponent } from './shop/components/filter-menu/filter-menu.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatOption, MatSelect} from "@angular/material/select";
+import {MatDatepicker, MatDatepickerInput, MatDatepickerToggle} from "@angular/material/datepicker";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -53,14 +63,15 @@ import {NgOptimizedImage} from "@angular/common";
     BillingViewComponent,
     RequestAddComponent,
     RequestViewComponent,
-    ProfileViewAndEditComponent,
     ProductsListComponent,
     ProductsViewComponent,
     HomeComponent,
     NotFoundComponent,
     PaymentConfirmationComponent,
     LoginViewComponent,
-    RegisterViewComponent
+    RegisterViewComponent,
+    ProductsSearchBarComponent,
+    FilterMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +98,18 @@ import {NgOptimizedImage} from "@angular/common";
     MatFormFieldModule,
     MatGridTile,
     MatGridList,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatButtonToggle,
+    MatDivider,
+    MatRadioGroup,
+    MatRadioButton,
+    HttpClientModule,
+    MatSelect,
+    MatOption,
+    MatDatepickerToggle,
+    ReactiveFormsModule,
+    MatDatepicker,
+    MatDatepickerInput
   ],
   providers: [
     provideAnimationsAsync()
