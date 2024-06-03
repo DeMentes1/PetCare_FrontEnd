@@ -13,7 +13,7 @@ export class AppComponent {
 
   shouldShowNavbar(): boolean {
     // Si la ruta es login o signup no mostrará el navbar
-    return this.router.url !== '/login' && this.router.url !== '/signup';  }
+    return this.router.url !== '/login' && this.router.url !== '/signup' && this.router.url !== '/forgotpassword';  }
 
   isVeterinaryPage(): boolean {
     return this.router.url.startsWith('/veterinary-'); }

@@ -12,6 +12,7 @@ import {BillingViewComponent} from "./billing/pages/billing-view/billing-view.co
 import {PaymentConfirmationComponent} from "./public/pages/payment-confirmation/payment-confirmation.component";
 import {RequestViewComponent} from "./support/pages/request-view/request-view.component";
 import {AppointmentViewComponent} from "./vet-appoinment/components/appointment-view/appointment-view.component";
+import {ForgotPasswordViewComponent} from "./public/components/forgot-password-view/forgot-password-view.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'payment-confirmation', component: PaymentConfirmationComponent},
   { path: 'contact-us', component: RequestViewComponent },
   { path: 'vet-appointment', component: AppointmentViewComponent },
+  { path: 'forgotpassword', component: ForgotPasswordViewComponent},
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: '**', component: NotFoundComponent },
 ];
