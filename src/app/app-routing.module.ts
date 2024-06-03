@@ -5,9 +5,7 @@ import {HomeComponent} from "./public/pages/home/home.component";
 import {BookingViewComponent} from "./booking/pages/booking-view/booking-view.component";
 import {LoginViewComponent} from "./public/components/login-view/login-view.component";
 import {RegisterViewComponent} from "./public/components/register-view/register-view.component";
-import {
-  ServicesContentViewComponent
-} from "./services-content/pages/services-content-view/services-content-view.component";
+import {ServicesContentViewComponent} from "./services-content/pages/services-content-view/services-content-view.component";
 import {VeterinaryListComponent} from "./veterinary/components/veterinary-list/veterinary-list.component";
 import {ProductsViewComponent} from "./shop/pages/products-view/products-view.component";
 import {BillingViewComponent} from "./billing/pages/billing-view/billing-view.component";
