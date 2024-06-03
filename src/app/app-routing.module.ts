@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'billing', component: BillingViewComponent },
   { path: 'payment-confirmation', component: PaymentConfirmationComponent},
   { path: 'contact-us', component: RequestViewComponent },
-  { path: 'vet-appointment', component: AppointmentViewComponent },
+  { path: 'veterinary-appointment', component: AppointmentViewComponent },
   { path: 'forgotpassword', component: ForgotPasswordViewComponent},
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: '**', component: NotFoundComponent },

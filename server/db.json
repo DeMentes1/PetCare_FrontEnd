@@ -1,73 +1,72 @@
 {
-	"vets": [
-  {
-    "nameVet": "Pet Wellness Center",
-    "serviceVet": "Comprehensive Wellness Exams",
-    "descriptionVet": "Dedicated to keeping your pet healthy and happy.",
-	"imgVet": "https://iili.io/JmoGitR.png"
-  },
-  {
-    "nameVet": "VetCare Specialists",
-    "serviceVet": "Emergency Care",
-    "descriptionVet": "Providing urgent care for pets in critical situations.",
-	"imgVet": "https://iili.io/JmoG6AJ.png"
-  },
-  {
-    "nameVet": "Furry Friends Clinic",
-    "serviceVet": "Dental Health Services",
-    "descriptionVet": "Ensuring your pet's teeth are clean and strong.",
-	"imgVet": "https://iili.io/JmoGPwv.png"
-  },
-  {
-    "nameVet": "Happy Paws Veterinary Hospital",
-    "serviceVet": "Surgical Procedures",
-    "descriptionVet": "Skilled surgeons ready to help your pet when needed.",
-	"imgVet": "https://iili.io/JmoGDFt.png"
-  },
-  {
-    "nameVet": "Loving Hearts Animal Clinic",
-    "serviceVet": "Geriatric Pet Care",
-    "descriptionVet": "Caring for senior pets with compassion and expertise.",
-	"imgVet": "https://iili.io/JmoGLnp.png"
-  },
-  {
-    "nameVet": "Purrfect Care Veterinary Center",
-    "serviceVet": "Comprehensive Wellness Exams",
-    "descriptionVet": "Where every pet receives personalized attention.",
-	"imgVet": "https://iili.io/JmoGQMN.png"
-  },
-  {
-    "nameVet": "Emergency Vet Services",
-    "serviceVet": "Emergency Care",
-    "descriptionVet": "Providing immediate assistance during pet emergencies.",
-	"imgVet": "https://iili.io/JmoGZPI.png"
-  },
-  {
-    "nameVet": "SmileBright Pet Dentistry",
-    "serviceVet": "Dental Health Services",
-    "descriptionVet": "Bringing sparkle to your pet's smile with advanced dental care.",
-	"imgVet": "https://iili.io/JmoGbcX.png"
-  },
-  {
-    "nameVet": "Healthy Pets Surgical Center",
-    "serviceVet": "Surgical Procedures",
-    "descriptionVet": "Specializing in safe and effective surgical interventions.",
-	"imgVet": "https://iili.io/JmoGmSn.png"
-  },
-  {
-    "nameVet": "Senior Pet Haven",
-    "serviceVet": "Geriatric Pet Care",
-    "descriptionVet": "Tailored care for aging pets to enhance their quality of life.",
-	"imgVet": "https://iili.io/JmoGy9s.png"
-  }
-],
-
+  "vets": [
+    {
+      "nameVet": "Pet Wellness Center",
+      "serviceVet": "Comprehensive Wellness Exams",
+      "descriptionVet": "Dedicated to keeping your pet healthy and happy.",
+      "imgVet": "https://iili.io/JmoGitR.png"
+    },
+    {
+      "nameVet": "VetCare Specialists",
+      "serviceVet": "Emergency Care",
+      "descriptionVet": "Providing urgent care for pets in critical situations.",
+      "imgVet": "https://iili.io/JmoG6AJ.png"
+    },
+    {
+      "nameVet": "Furry Friends Clinic",
+      "serviceVet": "Dental Health Services",
+      "descriptionVet": "Ensuring your pet's teeth are clean and strong.",
+      "imgVet": "https://iili.io/JmoGPwv.png"
+    },
+    {
+      "nameVet": "Happy Paws Veterinary Hospital",
+      "serviceVet": "Surgical Procedures",
+      "descriptionVet": "Skilled surgeons ready to help your pet when needed.",
+      "imgVet": "https://iili.io/JmoGDFt.png"
+    },
+    {
+      "nameVet": "Loving Hearts Animal Clinic",
+      "serviceVet": "Geriatric Pet Care",
+      "descriptionVet": "Caring for senior pets with compassion and expertise.",
+      "imgVet": "https://iili.io/JmoGLnp.png"
+    },
+    {
+      "nameVet": "Purrfect Care Veterinary Center",
+      "serviceVet": "Comprehensive Wellness Exams",
+      "descriptionVet": "Where every pet receives personalized attention.",
+      "imgVet": "https://iili.io/JmoGQMN.png"
+    },
+    {
+      "nameVet": "Emergency Vet Services",
+      "serviceVet": "Emergency Care",
+      "descriptionVet": "Providing immediate assistance during pet emergencies.",
+      "imgVet": "https://iili.io/JmoGZPI.png"
+    },
+    {
+      "nameVet": "SmileBright Pet Dentistry",
+      "serviceVet": "Dental Health Services",
+      "descriptionVet": "Bringing sparkle to your pet's smile with advanced dental care.",
+      "imgVet": "https://iili.io/JmoGbcX.png"
+    },
+    {
+      "nameVet": "Healthy Pets Surgical Center",
+      "serviceVet": "Surgical Procedures",
+      "descriptionVet": "Specializing in safe and effective surgical interventions.",
+      "imgVet": "https://iili.io/JmoGmSn.png"
+    },
+    {
+      "nameVet": "Senior Pet Haven",
+      "serviceVet": "Geriatric Pet Care",
+      "descriptionVet": "Tailored care for aging pets to enhance their quality of life.",
+      "imgVet": "https://iili.io/JmoGy9s.png"
+    }
+  ],
   "products": [
     {
       "id": 1,
       "productName": "Pet Shampoo",
       "productDescription": "Keep your pet's coat clean and healthy with our gentle yet effective pet shampoo.",
-      "productPrice": 30.00,
+      "productPrice": 30,
       "productCategory": "Cleaning Products",
       "productImage": "https://iili.io/JmoRN1f.png"
     },
@@ -75,73 +74,93 @@
       "id": 2,
       "productName": "Dog Food",
       "productDescription": "Nutritious and delicious dog food formulated to meet your pet's dietary needs.",
-      "productPrice": 50.00,
+      "productPrice": 50,
       "productCategory": "Pet Food",
-	  "productImage": "https://iili.io/Jmo76Ux.png"
+      "productImage": "https://iili.io/Jmo76Ux.png"
     },
     {
       "id": 3,
       "productName": "Cat Toy",
       "productDescription": "Entertain your feline friend with this fun and interactive cat toy.",
-      "productPrice": 15.00,
+      "productPrice": 15,
       "productCategory": "Pet Toys",
-	  "productImage": "https://iili.io/Jmo74lj.png"
+      "productImage": "https://iili.io/Jmo74lj.png"
     },
     {
       "id": 4,
       "productName": "Pet Bed",
       "productDescription": "Provide your pet with a cozy place to rest and relax with our comfortable pet bed.",
-      "productPrice": 60.00,
+      "productPrice": 60,
       "productCategory": "Pet Accessories",
-	  "productImage": "https://iili.io/Jmo7iHQ.png"
+      "productImage": "https://iili.io/Jmo7iHQ.png"
     },
     {
       "id": 5,
       "productName": "Fish Food",
       "productDescription": "High-quality fish food to keep your aquatic friends healthy and vibrant.",
-      "productPrice": 20.00,
+      "productPrice": 20,
       "productCategory": "Aquarium Supplies",
-	  "productImage": "https://iili.io/Jmo7rKb.png"
+      "productImage": "https://iili.io/Jmo7rKb.png"
     },
     {
       "id": 6,
       "productName": "Bird Cage",
       "productDescription": "Spacious and durable bird cage for your feathered companion's comfort and safety.",
-      "productPrice": 80.00,
+      "productPrice": 80,
       "productCategory": "Pet Accessories",
-	  "productImage": "https://iili.io/Jmo7sRV.png"
+      "productImage": "https://iili.io/Jmo7sRV.png"
     },
     {
       "id": 7,
       "productName": "Small Animal Treats",
       "productDescription": "Delicious treats for your small furry friends to enjoy as rewards or snacks.",
-      "productPrice": 10.00,
+      "productPrice": 10,
       "productCategory": "Pet Treats",
-	  "productImage": "https://iili.io/Jmo7LOB.png"
+      "productImage": "https://iili.io/Jmo7LOB.png"
     },
     {
       "id": 8,
       "productName": "Reptile Heat Lamp",
       "productDescription": "Provide the ideal basking spot for your reptile with our reliable heat lamp.",
-      "productPrice": 35.00,
+      "productPrice": 35,
       "productCategory": "Reptile Supplies",
-	  "productImage": "https://iili.io/Jmo7QDP.png"
-	},
+      "productImage": "https://iili.io/Jmo7QDP.png"
+    },
     {
       "id": 9,
       "productName": "Pet Carrier",
       "productDescription": "Sturdy and comfortable pet carrier for safe travels with your beloved pet.",
-      "productPrice": 40.00,
+      "productPrice": 40,
       "productCategory": "Pet Accessories",
-	  "productImage": "https://iili.io/Jmo7tx1.png"
+      "productImage": "https://iili.io/Jmo7tx1.png"
     },
     {
       "id": 10,
       "productName": "Hamster Wheel",
       "productDescription": "Encourage your hamster's activity and exercise with this durable hamster wheel.",
-      "productPrice": 12.00,
+      "productPrice": 12,
       "productCategory": "Small Animal Supplies",
-	  "productImage": "https://iili.io/Jmo7DWF.png"
+      "productImage": "https://iili.io/Jmo7DWF.png"
+    }
+  ],
+  "bookings": [
+    {
+      "fechaReserva": "2024-06-11T05:00:00.000Z",
+      "nombreDueno": "Juan",
+      "motivoCita": "Problemas digestivos",
+      "tipoServicio": "Consulta general",
+      "telefono": "454715478",
+      "detallesAdicionales": "El perro tiene alergia a ciertos medicamentos",
+      "id": 1
+    },
+    {
+      "fechaReserva": "2024-06-11T05:00:00.000Z",
+      "nombreDueno": "Carla",
+      "motivoCita": "Vacunación anual",
+      "tipoServicio": "Consulta general",
+      "telefono": "876556484",
+      "detallesAdicionales": "La mascota es muy nerviosa, por favor preparar un ambiente tranquilo",
+      "id": 2
     }
   ]
 }
