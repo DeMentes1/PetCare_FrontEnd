@@ -11,6 +11,7 @@ import {ProductsViewComponent} from "./shop/pages/products-view/products-view.co
 import {BillingViewComponent} from "./billing/pages/billing-view/billing-view.component";
 import {PaymentConfirmationComponent} from "./public/pages/payment-confirmation/payment-confirmation.component";
 import {RequestViewComponent} from "./support/pages/request-view/request-view.component";
+import {AppointmentViewComponent} from "./vet-appoinment/components/appointment-view/appointment-view.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'billing', component: BillingViewComponent },
   { path: 'payment-confirmation', component: PaymentConfirmationComponent},
   { path: 'contact-us', component: RequestViewComponent },
+  { path: 'vet-appointment', component: AppointmentViewComponent },
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: '**', component: NotFoundComponent },
 ];
