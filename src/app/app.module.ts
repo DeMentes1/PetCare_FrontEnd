@@ -49,7 +49,6 @@ import {MatOption, MatSelect} from "@angular/material/select";
 import {MatDatepicker, MatDatepickerInput, MatDatepickerToggle} from "@angular/material/datepicker";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatNativeDateModule} from "@angular/material/core";
-import { NavbarComponent } from './shared/components/navbar-pet-owner/navbar.component';
 import { NavbarVeterinaryComponent } from './shared/components/navbar-veterinary/navbar-veterinary.component';
 import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/navbar-pet-owner.component';
 
@@ -75,7 +74,6 @@ import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/na
     RegisterViewComponent,
     ProductsSearchBarComponent,
     FilterMenuComponent,
-    NavbarComponent,
     NavbarVeterinaryComponent,
     NavbarPetOwnerComponent
   ],
