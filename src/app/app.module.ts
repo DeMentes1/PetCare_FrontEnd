@@ -51,6 +51,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatNativeDateModule} from "@angular/material/core";
 import { NavbarVeterinaryComponent } from './shared/components/navbar-veterinary/navbar-veterinary.component';
 import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/navbar-pet-owner.component';
+import { AppointmentViewComponent } from './vet-appoinment/components/appointment-view/appointment-view.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/na
     ProductsSearchBarComponent,
     FilterMenuComponent,
     NavbarVeterinaryComponent,
-    NavbarPetOwnerComponent
+    NavbarPetOwnerComponent,
+    AppointmentViewComponent
   ],
   imports: [
     BrowserModule,
