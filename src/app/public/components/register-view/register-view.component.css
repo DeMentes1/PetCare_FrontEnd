@@ -1,11 +1,14 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap;
 }
 
 .registration-form {
   flex: 1;
   padding: 20px;
+  max-width: 600px; /* Limit the form width */
 }
 
 .registration-image {
@@ -37,11 +40,11 @@
   object-fit: cover;
 }
 
-.checkbox-margin{
+.checkbox-margin {
   padding-right: 20px;
 }
 
-.slide-toggle{
+.slide-toggle {
   padding-right: 20px;
 }
 
@@ -61,8 +64,9 @@ td {
   padding-right: 8px;
 }
 
-p{
-  padding-right: 10px
+p {
+  padding-right: 10px;
+  color: black;
 }
 
 .transparent-background {
@@ -81,4 +85,47 @@ p{
 
 p {
   color: black;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .registration-image {
+    display: none;
+  }
+
+  .registration-form {
+    width: 100%;
+    max-width: none; /* Remove the maximum width */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    align-items: flex-start; /* Center content horizontally */
+  }
+
+  .registration-form {
+    width: 100%;
+    text-align: center; /* Center form content */
+  }
+
+  h1 {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 30px;
+  }
+
+  .field-full-width {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; /* Add some space between form fields */
+  }
+
+  .field-full-width input {
+    width: calc(100% - 24px); /* Adjust input width to fit the container */
+  }
+
+  table {
+    width: 100%;
+  }
 }
