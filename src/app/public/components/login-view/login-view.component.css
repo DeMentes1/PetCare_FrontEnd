@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .registration-form {
@@ -37,11 +38,11 @@
   object-fit: cover;
 }
 
-.checkbox-margin{
+.checkbox-margin {
   padding-right: 20px;
 }
 
-.slide-toggle{
+.slide-toggle {
   padding-right: 20px;
 }
 
@@ -62,7 +63,7 @@ td {
   padding-right: 8px;
 }
 
-p{
+p {
   padding-right: 10px;
   color: black;
 }
@@ -77,6 +78,39 @@ p{
   height: 50px;
 }
 
-.forgot-password{
+.forgot-password {
   padding-left: 500px;
+  padding-top: 10px; /* Added padding */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .registration-image {
+    display: none;
+  }
+
+  .registration-form {
+    width: 100%;
+    max-width: 600px; /* Limit the form width */
+  }
+}
+
+@media (max-width: 768px) {
+  .registration-form {
+    width: 100%;
+  }
+
+  .forgot-password {
+    padding-left: 0;
+    padding-top: 10px; /* Added padding */
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 30px;
+  }
 }
