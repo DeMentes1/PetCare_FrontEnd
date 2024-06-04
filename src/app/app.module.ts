@@ -14,7 +14,6 @@ import { BillingEditComponent } from './billing/components/billing-edit/billing-
 import { BillingViewComponent } from './billing/pages/billing-view/billing-view.component';
 import { RequestAddComponent } from './support/components/request-add/request-add.component';
 import { RequestViewComponent } from './support/pages/request-view/request-view.component';
-import { ProfileViewAndEditComponent } from './profile/components/profile-view-and-edit/profile-view-and-edit.component';
 import { ProductsListComponent } from './shop/components/products-list/products-list.component';
 import { ProductsViewComponent } from './shop/pages/products-view/products-view.component';
 import { HomeComponent } from './public/pages/home/home.component';
@@ -48,11 +47,11 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatOption, MatSelect} from "@angular/material/select";
 import {MatDatepicker, MatDatepickerInput, MatDatepickerToggle} from "@angular/material/datepicker";
 import {ReactiveFormsModule} from "@angular/forms";
-import {MatNativeDateModule} from "@angular/material/core";
 import { NavbarVeterinaryComponent } from './shared/components/navbar-veterinary/navbar-veterinary.component';
 import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/navbar-pet-owner.component';
 import { AppointmentViewComponent } from './vet-appoinment/components/appointment-view/appointment-view.component';
 import { ForgotPasswordViewComponent } from './public/components/forgot-password-view/forgot-password-view.component';
+import {ProfileViewAndEditComponent} from "./profile/components/profile-view-and-edit/profile-view-and-edit.component";
 
 @NgModule({
   declarations: [
@@ -80,6 +79,7 @@ import { ForgotPasswordViewComponent } from './public/components/forgot-password
     NavbarPetOwnerComponent,
     AppointmentViewComponent,
     ForgotPasswordViewComponent,
+    ProfileViewAndEditComponent
   ],
   imports: [
     BrowserModule,
@@ -117,7 +117,7 @@ import { ForgotPasswordViewComponent } from './public/components/forgot-password
     MatDatepickerToggle,
     ReactiveFormsModule,
     MatDatepicker,
-    MatDatepickerInput
+    MatDatepickerInput,
   ],
   providers: [
     provideAnimationsAsync()
