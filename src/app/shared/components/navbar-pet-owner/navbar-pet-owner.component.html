@@ -2,7 +2,7 @@
   <div class="logo">
     <img mat-card-image src="../../../../assets/logo1.png" alt="logo">
   </div>
-  <div>
+  <div class="navbar-links">
     <a mat-button class="action-button" routerLink="/home">Inicio</a>
     <a mat-button class="action-button" routerLink="/services">Servicios</a>
     <a mat-button class="action-button" routerLink="/veterinary">Veterinarias</a>
@@ -10,10 +10,9 @@
     <a mat-button class="action-button" routerLink="/booking">Reservas</a>
     <a mat-button class="action-button" routerLink="/appointment">Citas</a>
     <a mat-button class="action-button" routerLink="/contact-us">Contáctanos</a>
-    <!--<a [routerLink]="[]" (click)="clickMethod()">Your Link</a>-->
   </div>
   <span class="example-spacer"></span>
-  <div>
+  <div class="navbar-icons">
     <button mat-icon-button class="shopping-cart-icon" aria-label="Example icon-button with shopping cart icon" routerLink="/products">
       <mat-icon>shopping_cart</mat-icon>
     </button>
@@ -24,4 +23,16 @@
       <mat-icon>account_circle</mat-icon>
     </button>
   </div>
+  <button mat-icon-button class="menu-icon" aria-label="Example icon-button with menu icon" (click)="toggleNavbar()">
+    <mat-icon>menu</mat-icon>
+  </button>
 </mat-toolbar>
+<div class="responsive-navbar" [class.open]="navbarOpen">
+  <a mat-button class="action-button" routerLink="/home">Inicio</a>
+  <a mat-button class="action-button" routerLink="/services">Servicios</a>
+  <a mat-button class="action-button" routerLink="/veterinary">Veterinarias</a>
+  <a mat-button class="action-button" routerLink="/products">Productos</a>
+  <a mat-button class="action-button" routerLink="/booking">Reservas</a>
+  <a mat-button class="action-button" routerLink="/appointment">Citas</a>
+  <a mat-button class="action-button" routerLink="/contact-us">Contáctanos</a>
+</div>

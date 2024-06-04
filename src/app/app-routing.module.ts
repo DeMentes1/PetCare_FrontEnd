@@ -16,6 +16,7 @@ import {ForgotPasswordViewComponent} from "./public/components/forgot-password-v
 import {AppointmentListComponent} from "./appointment/components/appointment-list/appointment-list.component";
 import {ProfileViewAndEditComponent} from "./profile/components/profile-view-and-edit/profile-view-and-edit.component";
 import {NewProductPublishViewComponent} from "./shop/pages/new-product-publish-view/new-product-publish-view.component";
+import {VeterinaryViewComponent} from "./veterinary/components/veterinary-view/veterinary-view.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'signup', component: RegisterViewComponent },
   { path: 'services', component: ServicesContentViewComponent },
   { path: 'veterinary', component: VeterinaryListComponent },
+  { path: 'veterinaries/:nameVet', component: VeterinaryViewComponent },
   { path: 'products', component: ProductsViewComponent },
   { path: 'billing', component: BillingViewComponent },
   { path: 'veterinary-publish-product', component: NewProductPublishViewComponent},
