@@ -13,10 +13,12 @@ import {PaymentConfirmationComponent} from "./public/pages/payment-confirmation/
 import {RequestViewComponent} from "./support/pages/request-view/request-view.component";
 import {AppointmentViewComponent} from "./vet-appoinment/components/appointment-view/appointment-view.component";
 import {ForgotPasswordViewComponent} from "./public/components/forgot-password-view/forgot-password-view.component";
+import {AppointmentListComponent} from "./appointment/components/appointment-list/appointment-list.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'booking', component: BookingViewComponent },
+  { path: 'appointment', component: AppointmentListComponent },
   { path: 'login', component: LoginViewComponent },
   { path: 'signup', component: RegisterViewComponent },
   { path: 'services', component: ServicesContentViewComponent },

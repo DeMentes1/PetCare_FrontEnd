@@ -1,15 +1,15 @@
 <div class="cards">
-  <div class="container"> <!--*ngFor="let veterinary of veterinaries-->
+  <div class="container" *ngFor="let appointment of appointmentvet">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Nombre</mat-card-title>
-        <mat-card-subtitle>Servicio</mat-card-subtitle>
+        <mat-card-title>Nombre: {{appointment.nombreDueno}}</mat-card-title>
+        <mat-card-subtitle>Servicio: {{appointment.tipoServicio}}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        <p>Motivo de cita</p>
-        <p>Fecha</p>
-        <p>Teléfono</p>
-        <p>Detalles adicionales</p>
+        <p>Motivo de cita: {{appointment.motivoCita}}</p>
+        <p>Fecha: {{appointment.fechaReserva}}</p>
+        <p>Teléfono: {{appointment.telefono}}</p>
+        <p>Detalles adicionales: {{appointment.detallesAdicionales}}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button routerLink="/billing">Aceptar</button>
