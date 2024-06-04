@@ -53,6 +53,7 @@ import { AppointmentViewComponent } from './vet-appoinment/components/appointmen
 import { ForgotPasswordViewComponent } from './public/components/forgot-password-view/forgot-password-view.component';
 import {ProfileViewAndEditComponent} from "./profile/components/profile-view-and-edit/profile-view-and-edit.component";
 import { NewProductPublishViewComponent } from './shop/pages/new-product-publish-view/new-product-publish-view.component';
+import { VeterinaryViewComponent } from './veterinary/components/veterinary-view/veterinary-view.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { NewProductPublishViewComponent } from './shop/pages/new-product-publish
     AppointmentViewComponent,
     ForgotPasswordViewComponent,
     ProfileViewAndEditComponent,
-    NewProductPublishViewComponent
+    NewProductPublishViewComponent,
+    VeterinaryViewComponent
   ],
   imports: [
     BrowserModule,

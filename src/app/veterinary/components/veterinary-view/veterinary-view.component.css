@@ -1,0 +1,123 @@
+/* Estilos generales */
+mat-toolbar {
+  padding: 110px 0 25px 80px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-container {
+  padding: 170px 10px 0 10px;
+  gap: 58px;
+}
+
+.filter-text {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+mat-card {
+  background-color: #E0FBFC;
+  width: 800px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.stars {
+  padding: 0 35px;
+  color: #dada2d;
+  gap: 7px;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-right {
+  flex-direction: column;
+  gap: 15px;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px 0;
+  max-height: 340px !important;
+  object-fit: contain;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.reserve-button {
+  color: white !important;
+  flex: auto;
+  padding: 10px 30px;
+  background-color: #3B9C9C !important;
+}
+
+mat-card-subtitle {
+  color: gray;
+}
+
+.veterinary-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Media Queries para hacer responsive */
+@media (max-width: 1200px) {
+  mat-card {
+    width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  mat-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    padding: 120px 10px 0 10px;
+    gap: 30px;
+  }
+
+  mat-card {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .reserve-button {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  mat-card-header, mat-card-content, mat-card-actions {
+    text-align: center;
+  }
+
+  mat-card-title {
+    font-size: 1.2em;
+  }
+
+  .reserve-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -1,1 +1,45 @@
-<p>veterinary-list works!</p>
+<!--
+<mat-toolbar>
+  <mat-form-field class="example-full-width">
+    <mat-label>Veterinarias</mat-label>
+    <input matInput type="text" placeholder="Veterinarias">
+    <button matSuffix mat-icon-button aria-label="Veterinarias">
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-form-field>
+  <div class="filter-text">
+    <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
+      <mat-icon>filter_list</mat-icon>
+    </button>
+    <p>Filtros</p>
+  </div>
+</mat-toolbar>
+-->
+<div class="cards-container">
+  <div class="card-left" *ngFor="let veterinary of veterinaries">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ veterinary.nameVet }}</mat-card-title>
+        <mat-card-subtitle>{{ veterinary.serviceVet }}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image [src]="veterinary.imgVet" alt="{{ veterinary.nameVet }}" class="veterinary-image">-->
+      <mat-card-actions>
+        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon" (click)="viewDetails(veterinary)">
+          <mat-icon>add</mat-icon>
+        </button>
+        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
+          <mat-icon>calendar_today</mat-icon>
+        </button>
+        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
+          <mat-icon>bookmark</mat-icon>
+        </button>
+        <div class="stars">
+          <mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon>
+        </div>
+        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

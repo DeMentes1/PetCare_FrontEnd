@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar-pet-owner.component.css'
 })
 export class NavbarPetOwnerComponent {
+  navbarOpen = false;
 
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 }
