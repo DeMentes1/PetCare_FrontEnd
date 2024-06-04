@@ -4,6 +4,7 @@ import {provideNativeDateAdapter} from "@angular/material/core";
 import {BookingEntity} from "../../model/booking-entity";
 import {BookingService} from "../../services/booking.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {formatDate} from "@angular/common";
 
 @Component({
   selector: 'app-booking-create',
@@ -28,6 +29,7 @@ export class BookingCreateComponent {
   onSubmit() {
     if (this.bookingForm.valid) {
       const booking: BookingEntity = this.bookingForm.value;
+      booking.fechaReserva = formatDate(booking.fechaReserva, 'dd/MM/yyyy', 'en-US');
       this.bookingService.createBooking(booking).subscribe(
         response => {
           console.log('Reserva creada:', response);

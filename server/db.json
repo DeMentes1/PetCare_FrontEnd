@@ -145,22 +145,13 @@
   ],
   "bookings": [
     {
-      "fechaReserva": "2024-06-11T05:00:00.000Z",
+      "fechaReserva": "13/06/2024",
       "nombreDueno": "Juan",
       "motivoCita": "Problemas digestivos",
       "tipoServicio": "Consulta general",
       "telefono": "454715478",
       "detallesAdicionales": "El perro tiene alergia a ciertos medicamentos",
       "id": 1
-    },
-    {
-      "fechaReserva": "2024-06-11T05:00:00.000Z",
-      "nombreDueno": "Carla",
-      "motivoCita": "Vacunación anual",
-      "tipoServicio": "Consulta general",
-      "telefono": "876556484",
-      "detallesAdicionales": "La mascota es muy nerviosa, por favor preparar un ambiente tranquilo",
-      "id": 2
     }
   ]
 }
