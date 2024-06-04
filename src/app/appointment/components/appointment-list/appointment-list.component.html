@@ -1,1 +1,13 @@
-<p>appointment-list works!</p>
+<div class="cards">
+  <div class="container" *ngFor="let appointment of appointments">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Tipo de servicio: {{appointment.tipoServicio}}</mat-card-title>
+        <mat-card-subtitle>Motivo de cita: {{appointment.motivoCita}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Fecha: {{appointment.fechaReserva}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
