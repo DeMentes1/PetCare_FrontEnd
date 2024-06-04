@@ -14,7 +14,6 @@ import { BillingEditComponent } from './billing/components/billing-edit/billing-
 import { BillingViewComponent } from './billing/pages/billing-view/billing-view.component';
 import { RequestAddComponent } from './support/components/request-add/request-add.component';
 import { RequestViewComponent } from './support/pages/request-view/request-view.component';
-import { ProfileViewAndEditComponent } from './profile/components/profile-view-and-edit/profile-view-and-edit.component';
 import { ProductsListComponent } from './shop/components/products-list/products-list.component';
 import { ProductsViewComponent } from './shop/pages/products-view/products-view.component';
 import { HomeComponent } from './public/pages/home/home.component';
@@ -22,7 +21,39 @@ import { NotFoundComponent } from './public/pages/not-found/not-found.component'
 import { PaymentConfirmationComponent } from './public/pages/payment-confirmation/payment-confirmation.component';
 import { LoginViewComponent } from './public/components/login-view/login-view.component';
 import { RegisterViewComponent } from './public/components/register-view/register-view.component';
-import {MatCard, MatCardContent} from "@angular/material/card";
+import {
+  MatCard,
+  MatCardActions,
+  MatCardContent,
+  MatCardModule,
+  MatCardSubtitle,
+  MatCardTitle
+} from "@angular/material/card";
+import {MatFormField, MatFormFieldModule, MatHint, MatLabel} from "@angular/material/form-field";
+import {MatInput} from "@angular/material/input";
+import {MatIcon, MatIconModule} from "@angular/material/icon";
+import {MatButton, MatButtonModule, MatFabButton, MatIconButton} from "@angular/material/button";
+import {MatCheckbox} from "@angular/material/checkbox";
+import {MatSlideToggle} from "@angular/material/slide-toggle";
+import {MatToolbar} from "@angular/material/toolbar";
+import {MatGridList, MatGridTile} from "@angular/material/grid-list";
+import {NgOptimizedImage} from "@angular/common";
+import {MatButtonToggle} from "@angular/material/button-toggle";
+import {MatDivider} from "@angular/material/divider";
+import {MatRadioButton, MatRadioGroup} from "@angular/material/radio";
+import { ProductsSearchBarComponent } from './shop/components/products-search-bar/products-search-bar.component';
+import { FilterMenuComponent } from './shop/components/filter-menu/filter-menu.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatOption, MatSelect} from "@angular/material/select";
+import {MatDatepicker, MatDatepickerInput, MatDatepickerToggle} from "@angular/material/datepicker";
+import {ReactiveFormsModule} from "@angular/forms";
+import { NavbarVeterinaryComponent } from './shared/components/navbar-veterinary/navbar-veterinary.component';
+import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/navbar-pet-owner.component';
+import { AppointmentViewComponent } from './vet-appoinment/components/appointment-view/appointment-view.component';
+import { ForgotPasswordViewComponent } from './public/components/forgot-password-view/forgot-password-view.component';
+import {ProfileViewAndEditComponent} from "./profile/components/profile-view-and-edit/profile-view-and-edit.component";
+import { NewProductPublishViewComponent } from './shop/pages/new-product-publish-view/new-product-publish-view.component';
+import { VeterinaryViewComponent } from './veterinary/components/veterinary-view/veterinary-view.component';
 
 @NgModule({
   declarations: [
@@ -37,20 +68,60 @@ import {MatCard, MatCardContent} from "@angular/material/card";
     BillingViewComponent,
     RequestAddComponent,
     RequestViewComponent,
-    ProfileViewAndEditComponent,
     ProductsListComponent,
     ProductsViewComponent,
     HomeComponent,
     NotFoundComponent,
     PaymentConfirmationComponent,
     LoginViewComponent,
-    RegisterViewComponent
+    RegisterViewComponent,
+    ProductsSearchBarComponent,
+    FilterMenuComponent,
+    NavbarVeterinaryComponent,
+    NavbarPetOwnerComponent,
+    AppointmentViewComponent,
+    ForgotPasswordViewComponent,
+    ProfileViewAndEditComponent,
+    NewProductPublishViewComponent,
+    VeterinaryViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatFormField,
+    MatInput,
+    MatIcon,
+    MatIconModule,
+    MatIconButton,
+    MatCheckbox,
+    MatSlideToggle,
+    MatButton,
+    MatButtonModule,
+    MatLabel,
     MatCard,
-    MatCardContent
+    MatCardModule,
+    MatCardContent,
+    MatFabButton,
+    MatCardActions,
+    MatCardTitle,
+    MatCardSubtitle,
+    MatToolbar,
+    MatHint,
+    MatFormFieldModule,
+    MatGridTile,
+    MatGridList,
+    NgOptimizedImage,
+    MatButtonToggle,
+    MatDivider,
+    MatRadioGroup,
+    MatRadioButton,
+    HttpClientModule,
+    MatSelect,
+    MatOption,
+    MatDatepickerToggle,
+    ReactiveFormsModule,
+    MatDatepicker,
+    MatDatepickerInput,
   ],
   providers: [
     provideAnimationsAsync()

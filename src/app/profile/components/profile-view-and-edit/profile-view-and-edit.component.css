@@ -1,0 +1,128 @@
+/* Ensure the content starts below the navbar */
+.profile-container {
+  min-width: 150px;
+  max-width: 500px;
+  width: 90%; /* Adjust width for responsiveness */
+  margin: auto;
+  padding: 20px;
+  padding-top: 100px; /* Add enough top padding to account for the navbar height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc; /* Puedes usar el color que desees */
+  margin-bottom: 20px;
+}
+
+input.mat-input-element {
+  margin-bottom: 10px;
+}
+
+.mat-form-field {
+  margin-bottom: 20px; /* Adjust spacing for better responsiveness */
+}
+
+.mat-form-field label {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; /* Agrega un tono grisáceo transparente al fondo */
+  padding: 5px; /* Añade un poco de espacio alrededor del texto */
+  border-radius: 4px; /* Redondea las esquinas */
+}
+
+.mat-form-field .mat-label {
+  position: relative;
+  top: -50%;
+  transform: translateY(-50%);
+}
+
+h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.example-full-width {
+  width: 100%; /* Ensure full width */
+}
+
+.example-form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.save-button-container {
+  text-align: center; /* Center the button */
+  height: auto;
+}
+
+.save-button-container button {
+  color: white; /* Cambia el color del texto a blanco */
+  border: none; /* Elimina el borde del botón */
+  outline: none; /* Elimina el contorno al enfocar */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+  transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+.save-button-container button:hover {
+  background-color: rgb(7, 166, 152); /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 10px;
+    padding-top: 80px; /* Adjust top padding for smaller screens */
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .mat-form-field {
+    margin-bottom: 15px;
+  }
+
+  .save-button-container {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-form {
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table, td {
+    display: block;
+  }
+
+  td {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

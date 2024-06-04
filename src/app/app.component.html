@@ -1,2 +1,9 @@
-
+<ng-container *ngIf="shouldShowNavbar()">
+  <ng-container *ngIf="isVeterinaryPage(); else petOwnerNavbar">
+    <app-navbar-veterinary></app-navbar-veterinary>
+  </ng-container>
+  <ng-template #petOwnerNavbar>
+    <app-navbar-pet-owner></app-navbar-pet-owner>
+  </ng-template>
+</ng-container>
 <router-outlet />

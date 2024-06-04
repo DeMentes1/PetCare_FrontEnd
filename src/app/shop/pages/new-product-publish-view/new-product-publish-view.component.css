@@ -1,0 +1,74 @@
+.publish-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+.publish-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.27);
+  background-color: #afc4c5;
+  color: #000;
+}
+
+.publish-form {
+  width: 100%;
+}
+
+.publish-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.publish-submit-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #06897D;
+}
+
+mat-card {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.27);
+  background-color: #afc4c5 !important;
+  color:#000;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+mat-label, input, textarea {
+  color: #000 !important;
+  /*border: black solid 1px;*/
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #06897D !important;
+}
+
+@media (min-width: 768px) {
+  .booking-container {
+    padding: 80px;
+  }
+
+  mat-card {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .booking-container {
+    padding: 80px;
+  }
+}
