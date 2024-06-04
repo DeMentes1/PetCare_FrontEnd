@@ -52,6 +52,7 @@ import { NavbarPetOwnerComponent } from './shared/components/navbar-pet-owner/na
 import { AppointmentViewComponent } from './vet-appoinment/components/appointment-view/appointment-view.component';
 import { ForgotPasswordViewComponent } from './public/components/forgot-password-view/forgot-password-view.component';
 import {ProfileViewAndEditComponent} from "./profile/components/profile-view-and-edit/profile-view-and-edit.component";
+import { NewProductPublishViewComponent } from './shop/pages/new-product-publish-view/new-product-publish-view.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import {ProfileViewAndEditComponent} from "./profile/components/profile-view-and
     NavbarPetOwnerComponent,
     AppointmentViewComponent,
     ForgotPasswordViewComponent,
-    ProfileViewAndEditComponent
+    ProfileViewAndEditComponent,
+    NewProductPublishViewComponent
   ],
   imports: [
     BrowserModule,

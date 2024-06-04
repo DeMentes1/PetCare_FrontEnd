@@ -141,6 +141,14 @@
       "productPrice": 12,
       "productCategory": "Small Animal Supplies",
       "productImage": "https://iili.io/Jmo7DWF.png"
+    },
+    {
+      "productName": "Generic Product",
+      "productDescription": "Just a Generic Product",
+      "productPrice": 20,
+      "productCategory": "Generic Products",
+      "productImage": "https://iili.io/JmoRN1f.png",
+      "id": 11
     }
   ],
   "bookings": [
