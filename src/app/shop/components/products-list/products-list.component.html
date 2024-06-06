@@ -1,10 +1,12 @@
-<mat-toolbar>
-  <app-products-search-bar (searchChange)="filterProducts($event)"></app-products-search-bar>
-  <app-filter-menu (categoryChange)="filterByCategory($event)"></app-filter-menu>
+<mat-toolbar class="product-toolbar" aria-label="Product Toolbar">
+  <div class="toolbar-content">
+    <app-products-search-bar (searchChange)="filterProducts($event)" aria-label="Product Search Bar"></app-products-search-bar>
+    <app-filter-menu class="filter-menu" (categoryChange)="filterByCategory($event)" aria-label="Filter Menu"></app-filter-menu>
+  </div>
 </mat-toolbar>
 
-<mat-grid-list cols="3" rowHeight="4:3" gutterSize="100px">
-  <mat-grid-tile *ngFor="let product of filteredProducts" [colspan]="1" [rowspan]="1">
+<div class="cards-container" role="list" aria-label="Product Cards">
+  <div class="card" *ngFor="let product of filteredProducts" role="listitem">
     <mat-card>
       <mat-card-header>
         <mat-card-title>{{ product.productName }}</mat-card-title>
@@ -22,7 +24,5 @@
         <button mat-button>Añadir al Carrito</button>
       </mat-card-actions>
     </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
-
-
+  </div>
+</div>

@@ -1,22 +1,5 @@
-<!--
-<mat-toolbar>
-  <mat-form-field class="example-full-width">
-    <mat-label>Veterinarias</mat-label>
-    <input matInput type="text" placeholder="Veterinarias">
-    <button matSuffix mat-icon-button aria-label="Veterinarias">
-      <mat-icon>search</mat-icon>
-    </button>
-  </mat-form-field>
-  <div class="filter-text">
-    <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
-      <mat-icon>filter_list</mat-icon>
-    </button>
-    <p>Filtros</p>
-  </div>
-</mat-toolbar>
--->
-<div class="cards-container">
-  <div class="card-left" *ngFor="let veterinary of veterinaries">
+<div class="cards-container" role="list" aria-label="Veterinary Cards">
+  <div class="card-left" *ngFor="let veterinary of veterinaries" role="listitem">
     <mat-card>
       <mat-card-header>
         <mat-card-title>{{ veterinary.nameVet }}</mat-card-title>
@@ -24,19 +7,19 @@
       </mat-card-header>
       <!--<img mat-card-image [src]="veterinary.imgVet" alt="{{ veterinary.nameVet }}" class="veterinary-image">-->
       <mat-card-actions>
-        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon" (click)="viewDetails(veterinary)">
+        <button mat-icon-button class="filter-list-icon" aria-label="View details" (click)="viewDetails(veterinary)">
           <mat-icon>add</mat-icon>
         </button>
-        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
+        <button mat-icon-button class="filter-list-icon" aria-label="Schedule appointment">
           <mat-icon>calendar_today</mat-icon>
         </button>
-        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
+        <button mat-icon-button class="filter-list-icon" aria-label="Bookmark">
           <mat-icon>bookmark</mat-icon>
         </button>
-        <div class="stars">
+        <div class="stars" aria-label="Rating">
           <mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon>
         </div>
-        <button mat-icon-button class="filter-list-icon" aria-label="Example icon-button with filter list icon">
+        <button mat-icon-button class="filter-list-icon" aria-label="More options">
           <mat-icon>more_horiz</mat-icon>
         </button>
       </mat-card-actions>

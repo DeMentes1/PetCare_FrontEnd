@@ -1,40 +1,39 @@
 <div class="booking-container">
   <mat-card>
-    <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()" role="form" aria-label="Booking Form">
       <mat-form-field appearance="outline">
         <mat-label>Fecha de reserva</mat-label>
-        <input matInput [matDatepicker]="picker" formControlName="fechaReserva">
+        <input matInput [matDatepicker]="picker" formControlName="fechaReserva" aria-label="Fecha de reserva">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Nombre del dueño</mat-label>
-        <input matInput formControlName="nombreDueno">
+        <input matInput formControlName="nombreDueno" aria-label="Nombre del dueño">
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Motivo de cita</mat-label>
-        <input matInput formControlName="motivoCita">
+        <input matInput formControlName="motivoCita" aria-label="Motivo de cita">
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Tipo de servicio</mat-label>
-        <input matInput formControlName="tipoServicio">
+        <input matInput formControlName="tipoServicio" aria-label="Tipo de servicio">
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Teléfono</mat-label>
-        <input matInput formControlName="telefono">
+        <input matInput formControlName="telefono" aria-label="Teléfono">
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Detalles adicionales</mat-label>
-        <textarea matInput formControlName="detallesAdicionales"></textarea>
+        <textarea matInput formControlName="detallesAdicionales" aria-label="Detalles adicionales"></textarea>
       </mat-form-field>
 
       <button mat-raised-button color="primary" type="submit">Reservar cita</button>
     </form>
   </mat-card>
-
 </div>

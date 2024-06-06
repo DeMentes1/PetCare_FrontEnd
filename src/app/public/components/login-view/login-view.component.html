@@ -1,22 +1,24 @@
-<div class="container">
+<div class="container" role="form" aria-label="Formulario de registro">
   <div class="registration-form">
     <form class="reg-form">
       <h1>Iniciar Sesión</h1>
       <p>
         <mat-form-field class="field-full-width transparent-background">
           <mat-label>Correo Electrónico</mat-label>
-          <input matInput placeholder="Example@example.com">
+          <input matInput placeholder="Example@example.com" aria-label="Correo Electrónico">
         </mat-form-field>
         <mat-form-field class="field-full-width transparent-background">
           <mat-label>Contraseña</mat-label>
-          <input matInput [type]="hide ? 'password' : 'text'">
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <input matInput [type]="hide ? 'password' : 'text'" aria-label="Contraseña">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Toggle password visibility'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
         </mat-form-field>
       </p>
 
-      <mat-checkbox class="checkbox-margin"><p>Recuérdame</p></mat-checkbox>
+      <mat-checkbox class="checkbox-margin">
+        <p>Recuérdame</p>
+      </mat-checkbox>
       <a class="forgot-password" href="/forgotpassword">Olvidaste tu contraseña?</a>
 
       <div class="register-button-container">
@@ -26,6 +28,6 @@
     </form>
   </div>
   <div class="registration-image">
-    <img src="assets/login-register-dog.jpg" alt="login-register-dog-image">
+    <img src="assets/login-register-dog.jpg" alt="Imagen de perro en la página de inicio de sesión y registro">
   </div>
 </div>
