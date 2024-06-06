@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar-veterinary.component.css'
 })
 export class NavbarVeterinaryComponent {
+  navbarOpen = false;
 
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 }
