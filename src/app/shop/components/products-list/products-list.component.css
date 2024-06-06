@@ -1,22 +1,42 @@
-mat-toolbar {
-  padding: 110px 0 25px 80px;
+.product-toolbar {
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
 }
 
-mat-card-title, mat-card-subtitle {
-  margin: 0;
+.toolbar-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1 1 auto;
 }
 
-mat-card-content {
-  flex-grow: 1;
+.filter-menu {
+  flex: 0 1 50%;
 }
 
-mat-grid-tile {
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 32px);
   display: flex;
   justify-content: center;
 }
 
 mat-card {
   width: 100%;
+  max-width: 300px;
 }
 
 .product-image {
@@ -24,4 +44,38 @@ mat-card {
   max-height: 100px;
   object-fit: contain;
   margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-menu {
+    flex: 1 1 auto;
+    margin-top: 10px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .card {
+    flex: 1 1 calc(50% - 32px);
+  }
+}
+
+@media (min-width: 1201px) {
+  .card {
+    flex: 1 1 calc(33.333% - 32px);
+  }
 }

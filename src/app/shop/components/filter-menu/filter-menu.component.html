@@ -1,6 +1,6 @@
-<mat-form-field appearance="fill">
+<mat-form-field appearance="fill" class="category-filter">
   <mat-label>Filter by Category</mat-label>
-  <mat-select (selectionChange)="onCategoryChange($event.value)">
+  <mat-select (selectionChange)="onCategoryChange($event.value)" aria-label="Select category">
     <mat-option *ngFor="let category of categories" [value]="category">
       {{ category }}
     </mat-option>

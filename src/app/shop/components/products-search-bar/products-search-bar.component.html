@@ -1,7 +1,7 @@
- <mat-form-field appearance="outline" class="example-full-width">
-    <mat-label>Search Products</mat-label>
-    <input matInput type="text" (input)="onSearchChange($event)" placeholder="Enter product name or description">
-    <button matSuffix mat-icon-button aria-label="Search Products">
-      <mat-icon>search</mat-icon>
-    </button>
-  </mat-form-field>
+<mat-form-field appearance="outline" class="example-full-width">
+  <mat-label style="color: black;">Search Products</mat-label>
+  <input matInput type="text" (input)="onSearchChange($event)" placeholder="Enter product name or description" aria-label="Search input" style="color: black;">
+  <button matSuffix mat-icon-button aria-label="Search button" aria-labelledby="search-input">
+    <mat-icon style="color: black;">search</mat-icon>
+  </button>
+</mat-form-field>
