@@ -1,28 +1,63 @@
-.cards {
-  padding: 100px 10px 0 10px;
+mat-toolbar {
+  padding: 110px 0 25px 80px;
+}
+
+div {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-container {
+  /*margin: 45px 8px;*/
+  padding: 120px 20px 0 20px;
+  gap: 90px;
+}
+
+.filter-text {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 mat-card {
   background-color: #E0FBFC;
-  width: 100%;
-  max-width: 400px;
-  margin: 10px;
 }
 
-.container {
+.stars {
+  padding: 0 35px;
+  color: #dada2d;
+  gap: 7px;
+}
+
+.card-left {
+  /*padding: 10px 30px 0 80px;*/
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: stretch;
-  width: 100%;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-button {
+.card-right {
+  padding: 60px 80px 60px 30px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+img {
+  margin: auto;
+  padding: 20px 0 0;
+}
+
+.example-spacer {
+  flex:1 1 auto;
+}
+
+.reserve-button {
   color: white !important;
-  flex: auto;
+  flex:auto;
   padding: 10px 30px;
   background-color: #3B9C9C !important;
 }
@@ -31,37 +66,9 @@ mat-card-subtitle {
   color: gray;
 }
 
-mat-card-actions {
-  gap: 10px;
-  padding-top: 15px;
-}
-
-/* Media Queries */
-@media (min-width: 600px) {
-  .cards {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 900px) {
-  .cards {
-    justify-content: space-between;
-  }
-
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-
-  mat-card {
-    width: calc(50% - 20px);
-  }
-}
-
-@media (min-width: 1200px) {
-  mat-card {
-    width: calc(33.33% - 20px);
-  }
+.veterinary-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin: 0 auto;
 }

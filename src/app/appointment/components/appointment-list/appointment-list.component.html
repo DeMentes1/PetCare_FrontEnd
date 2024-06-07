@@ -1,6 +1,6 @@
-<div class="cards">
-  <div class="container" *ngFor="let appointment of appointments">
-    <mat-card>
+<div class="cards-container" role="list" aria-label="Appointment cards">
+<div class="card-left" *ngFor="let appointment of appointments" role="listitem">
+    <mat-card role="article">
       <mat-card-header>
         <mat-card-title>Tipo de servicio: {{appointment.tipoServicio}}</mat-card-title>
         <mat-card-subtitle>Motivo de cita: {{appointment.motivoCita}}</mat-card-subtitle>
