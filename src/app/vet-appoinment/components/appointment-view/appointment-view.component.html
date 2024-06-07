@@ -1,6 +1,6 @@
-<div class="cards">
-  <div class="container" *ngFor="let appointment of appointmentvet">
-    <mat-card>
+<div class="cards-container" role="list" aria-label="Veterinary Appointment Cards">
+<div class="cards" *ngFor="let appointment of appointmentvet" role="listitem">
+    <mat-card role="region">
       <mat-card-header>
         <mat-card-title>Nombre: {{appointment.nombreDueno}}</mat-card-title>
         <mat-card-subtitle>Servicio: {{appointment.tipoServicio}}</mat-card-subtitle>

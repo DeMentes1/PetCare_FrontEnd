@@ -1,9 +1,9 @@
-<section id="home" class="hero">
+<section id="home" class="hero" aria-labelledby="home-title" aria-describedby="home-description">
   <mat-card>
     <mat-card-content>
-      <h1>Bienvenido a PetCare</h1>
-      <p>Donde cada huella deja una marca en nuestros corazones</p>
-      <button mat-fab extended color="primary">Saber más</button>
+      <h1 id="home-title">Bienvenido a PetCare</h1>
+      <p id="home-description">Donde cada huella deja una marca en nuestros corazones</p>
+      <button mat-fab extended color="primary" routerLink="/services" aria-label="Saber más sobre los servicios">Saber más</button>
     </mat-card-content>
   </mat-card>
 </section>

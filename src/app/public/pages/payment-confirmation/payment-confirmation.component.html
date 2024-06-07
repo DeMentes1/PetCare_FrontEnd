@@ -1,10 +1,10 @@
-<div class="container">
-  <img ngSrc="assets/check.png" alt="" width="250" height="200">
-  <h1>
+<div class="container" aria-live="polite" aria-labelledby="order-status">
+  <img ngSrc="assets/check.png" alt="Check mark" width="250" height="200" aria-hidden="true">
+  <h1 id="order-status">
     Gracias
   </h1>
   <h2>
     Su orden está siendo procesada
   </h2>
-  <button mat-flat-button color="primary" routerLink="/home">Inicio</button>
+  <button mat-flat-button color="primary" routerLink="/home" aria-label="Volver a la página de inicio">Inicio</button>
 </div>
