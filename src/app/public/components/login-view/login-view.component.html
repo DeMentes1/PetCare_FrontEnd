@@ -1,11 +1,12 @@
 <div class="container" role="form" aria-label="Formulario de registro">
   <div class="registration-form">
-    <form class="reg-form">
+    <form [formGroup]="form" (submit)="onSubmit()">
       <h1>Iniciar Sesión</h1>
       <p>
         <mat-form-field class="field-full-width transparent-background">
           <mat-label>Correo Electrónico</mat-label>
           <input matInput placeholder="Example@example.com" aria-label="Correo Electrónico">
+          <mat-error *ngIf="isInvalidControl(form, 'email')">{{ errorMessagesForControl(form, 'email') }}</mat-error>
         </mat-form-field>
         <mat-form-field class="field-full-width transparent-background">
           <mat-label>Contraseña</mat-label>
@@ -13,6 +14,7 @@
           <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Toggle password visibility'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
+          <mat-error *ngIf="isInvalidControl(form, 'password')">{{ errorMessagesForControl(form, 'password') }}</mat-error>
         </mat-form-field>
       </p>
 
@@ -27,6 +29,8 @@
       </div>
     </form>
   </div>
+
+
   <div class="registration-image">
     <img src="assets/login-register-dog.jpg" alt="Imagen de perro en la página de inicio de sesión y registro">
   </div>

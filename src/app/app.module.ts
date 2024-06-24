@@ -56,6 +56,7 @@ import { NewProductPublishViewComponent } from './shop/pages/new-product-publish
 import { VeterinaryViewComponent } from './veterinary/components/veterinary-view/veterinary-view.component';
 import { HomeVetComponent } from './public/pages/home-vet/home-vet.component';
 import { VetProfileViewAndEditComponent } from './profile/components/vet-profile-view-and-edit/vet-profile-view-and-edit.component';
+import { AuthenticationSectionComponent } from './iam/components/authentication-section/authentication-section.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { VetProfileViewAndEditComponent } from './profile/components/vet-profile
     NewProductPublishViewComponent,
     VeterinaryViewComponent,
     HomeVetComponent,
-    VetProfileViewAndEditComponent
+    VetProfileViewAndEditComponent,
+    AuthenticationSectionComponent
   ],
   imports: [
     BrowserModule,
