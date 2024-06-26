@@ -9,6 +9,7 @@ import {SignInRequest} from "../../../iam/model/sign-in.request";
   templateUrl: './login-view.component.html',
   styleUrl: './login-view.component.css'
 })
+
 export class LoginViewComponent extends BaseFormComponent implements OnInit {
   form!: FormGroup;
   submitted = false;
@@ -29,8 +30,8 @@ export class LoginViewComponent extends BaseFormComponent implements OnInit {
   onSubmit() {
     if (this.form.invalid) return;
 
-    let email = this.form.value.email;
-    let password = this.form.value.password;
+    const email = this.form.value.email;
+    const password = this.form.value.password;
 
     const signInRequest = new SignInRequest(email, password);
     this.authenticationService.signIn(signInRequest);
